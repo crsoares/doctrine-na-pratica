@@ -43,15 +43,30 @@ class User
 	 */
 	private $subscription;
 
-	public function getSubscription()
-	{
-		return $this->subscription;
-	}
+	/**
+	 * @ORM\OneToMany(targetEntity="Enrollment", mappedBy="user", cascade={"all"}, orphanRemoval=true, fetch="LAZY")
+	 */
+	private $enrollmentCollection;
 
-	public function setSubscription($subscription)
+	/**
+	 * @ORM\OneToMany(targetEntity="Course", mappedBy="teacher", cascade={"all"}, orphanRemoval=true, fetch="LAZY")
+	 * @var Doctrine\Common\Collections\Collection
+	 */
+	protected $courseCollection;
+
+	/**
+	 * @ORM\ManyToMany(targetEntity="Lesson", inversedBy="userLesson", cascade={"all"})
+	 * @ORM\JoinTable(name="LessonUser",
+	 *		joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
+	 *		inverseJoinColumns={@ORM\JoinColumn(name="lesson_id", referencedColumnName="id")})
+	 */
+	private $lessonCollection;
+
+	public function __construct()
 	{
-		$this->subscription = $subscription;
-		return $this;
+		$this->couseCollection      = new ArrayCollection;
+		$this->lessonCollection     = new ArrayCollection;
+		$this->enrollmentCollection = new ArrayCollection;
 	}
 
 	/**
@@ -103,6 +118,50 @@ class User
 	public function setAvatar($avatar)
 	{
 		$this->avatar = $avatar;
+		return $this;
+	}
+
+	public function getSubscription()
+	{
+		return $this->subscription;
+	}
+
+	public function setSubscription($subscription)
+	{
+		$this->subscription = $subscription;
+		return $this;
+	}
+
+	public function getEnrollmentCollection()
+	{
+		return $this->enrollmentCollection;
+	}
+
+	public function setEnrollmentCollection($enrollmentCollection)
+	{
+		$this->enrollmentCollection = $enrollmentCollection;
+		return $this;
+	}
+
+	public function getCourseCollection()
+	{
+		return $this->courseCollection;
+	}
+
+	public function setCouseCollection($couseCollection)
+	{
+		$this->couseCollection = $couseCollection;
+		return $this;
+	}
+
+	public function getLessonCollection()
+	{
+		return $this->lessonCollection;
+	}
+
+	public function setLessonCollection($lessonCollection)
+	{
+		$this->lessonCollection = $lessonCollection;
 		return $this;
 	}
 
