@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/doctrine-na-pratica/src/DoctrineNaPratica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/var/www/doctrine-na-pratica/src/DoctrineNaPratica</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Model/Progress.php.html#11">Progress</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#10">Subscription</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#11">Course</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#18">Profile</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#11">Lesson</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#11">Enrollment</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#11">User</a></td><td class="text-right">45%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Model/Progress.php.html#91"><abbr title="Progress::setLesson">setLesson</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#86"><abbr title="Progress::getLesson">getLesson</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#80"><abbr title="Progress::setUser">setUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#75"><abbr title="Progress::getUser">getUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#97"><abbr title="Progress::getCreated">getCreated</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#102"><abbr title="Progress::setCreated">setCreated</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#47"><abbr title="Subscription::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#113"><abbr title="Progress::setUpdated">setUpdated</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#108"><abbr title="Progress::getUpdated">getUpdated</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#69"><abbr title="Progress::setPercent">setPercent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#64"><abbr title="Progress::getPercent">getPercent</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#98"><abbr title="Profile::setEmail">setEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#93"><abbr title="Profile::getEmail">getEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#87"><abbr title="Profile::setLogin">setLogin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#104"><abbr title="Profile::getAvatar">getAvatar</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#109"><abbr title="Profile::setAvatar">setAvatar</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Progress.php.html#59"><abbr title="Progress::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#120"><abbr title="Profile::setUser">setUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#115"><abbr title="Profile::getUser">getUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#52"><abbr title="Subscription::getUser">getUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#57"><abbr title="Subscription::setUser">setUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#156"><abbr title="User::getCourseCollection">getCourseCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#150"><abbr title="User::setEnrollmentCollection">setEnrollmentCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#145"><abbr title="User::getEnrollmentCollection">getEnrollmentCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#139"><abbr title="User::setSubscription">setSubscription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#161"><abbr title="User::setCouseCollection">setCouseCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#167"><abbr title="User::getLessonCollection">getLessonCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#183"><abbr title="User::setProfileCollection">setProfileCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#178"><abbr title="User::getProfileCollection">getProfileCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#172"><abbr title="User::setLessonCollection">setLessonCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#134"><abbr title="User::getSubscription">getSubscription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#123"><abbr title="User::getAvatar">getAvatar</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#74"><abbr title="Subscription::getStarted">getStarted</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#68"><abbr title="Subscription::setStatus">setStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#63"><abbr title="Subscription::getStatus">getStatus</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#79"><abbr title="Subscription::setStarted">setStarted</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#85"><abbr title="Subscription::getFinished">getFinished</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#112"><abbr title="User::getEmail">getEmail</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/User.php.html#101"><abbr title="User::getLogin">getLogin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Subscription.php.html#90"><abbr title="Subscription::setFinished">setFinished</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#82"><abbr title="Profile::getLogin">getLogin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#76"><abbr title="Profile::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#154"><abbr title="Course::setLessonCollection">setLessonCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#149"><abbr title="Course::getLessonCollection">getLessonCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#143"><abbr title="Course::setTeacher">setTeacher</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#138"><abbr title="Course::getTeacher">getTeacher</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#160"><abbr title="Course::getEnrollmentCollection">getEnrollmentCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#165"><abbr title="Course::setEnrollmentCollection">setEnrollmentCollection</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#50"><abbr title="Enrollment::getUser">getUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#45"><abbr title="Enrollment::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#171"><abbr title="Course::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#132"><abbr title="Course::setValue">setValue</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#127"><abbr title="Course::getValue">getValue</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#94"><abbr title="Course::getDescription">getDescription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#88"><abbr title="Course::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#83"><abbr title="Course::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#99"><abbr title="Course::setDescription">setDescription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#105"><abbr title="Course::getVideo">getVideo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#121"><abbr title="Course::setPermalink">setPermalink</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#116"><abbr title="Course::getPermalink">getPermalink</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#110"><abbr title="Course::setVideo">setVideo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#55"><abbr title="Enrollment::setUser">setUser</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#61"><abbr title="Enrollment::getCourse">getCourse</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#113"><abbr title="Lesson::getCourse">getCourse</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#107"><abbr title="Lesson::setPermalink">setPermalink</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#102"><abbr title="Lesson::getPermalink">getPermalink</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#118"><abbr title="Lesson::setCourse">setCourse</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#124"><abbr title="Lesson::getUserLessons">getUserLessons</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#71"><abbr title="Profile::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Profile.php.html#66"><abbr title="Profile::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#129"><abbr title="Lesson::setUserLessons">setUserLessons</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#96"><abbr title="Lesson::setVideo">setVideo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#91"><abbr title="Lesson::getVideo">getVideo</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#77"><abbr title="Enrollment::setCertificationCode">setCertificationCode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#72"><abbr title="Enrollment::getCertificationCode">getCertificationCode</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Enrollment.php.html#66"><abbr title="Enrollment::setCourse">setCourse</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#64"><abbr title="Lesson::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#69"><abbr title="Lesson::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#85"><abbr title="Lesson::setDescription">setDescription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#80"><abbr title="Lesson::getDescription">getDescription</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Lesson.php.html#74"><abbr title="Lesson::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Course.php.html#78"><abbr title="Course::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.15</a> using <a href="http://php.net/" target="_top">PHP 5.6.6-1+deb.sury.org~trusty+1</a> and <a href="http://phpunit.de/">PHPUnit 4.5.0</a> at Thu Mar 19 20:20:15 UTC 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([6,0,0,0,0,1,0,0,0,0,0,4], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([82,0,0,0,0,0,0,0,0,0,0,10], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,18,"<a href=\"Model\/Course.php.html#11\">Course<\/a>"],[0,7,"<a href=\"Model\/Enrollment.php.html#11\">Enrollment<\/a>"],[100,0,"<a href=\"Model\/FacebookProfile.php.html#10\">FacebookProfile<\/a>"],[100,0,"<a href=\"Model\/GithubProfile.php.html#10\">GithubProfile<\/a>"],[0,13,"<a href=\"Model\/Lesson.php.html#11\">Lesson<\/a>"],[0,11,"<a href=\"Model\/Profile.php.html#18\">Profile<\/a>"],[0,11,"<a href=\"Model\/Progress.php.html#11\">Progress<\/a>"],[0,9,"<a href=\"Model\/Subscription.php.html#10\">Subscription<\/a>"],[100,0,"<a href=\"Model\/TwitterProfile.php.html#10\">TwitterProfile<\/a>"],[45.454545454545,20,"<a href=\"Model\/User.php.html#11\">User<\/a>"],[100,4,"<a href=\"Test\/TestCase.php.html#7\">TestCase<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Model\/Course.php.html#78\">Course::getId<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#83\">Course::getName<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#88\">Course::setName<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#94\">Course::getDescription<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#99\">Course::setDescription<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#105\">Course::getVideo<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#110\">Course::setVideo<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#116\">Course::getPermalink<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#121\">Course::setPermalink<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#127\">Course::getValue<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#132\">Course::setValue<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#138\">Course::getTeacher<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#143\">Course::setTeacher<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#149\">Course::getLessonCollection<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#154\">Course::setLessonCollection<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#160\">Course::getEnrollmentCollection<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#165\">Course::setEnrollmentCollection<\/a>"],[0,1,"<a href=\"Model\/Course.php.html#171\">Course::__construct<\/a>"],[0,1,"<a href=\"Model\/Enrollment.php.html#45\">Enrollment::getId<\/a>"],[0,1,"<a href=\"Model\/Enrollment.php.html#50\">Enrollment::getUser<\/a>"],[0,1,"<a href=\"Model\/Enrollment.php.html#55\">Enrollment::setUser<\/a>"],[0,1,"<a href=\"Model\/Enrollment.php.html#61\">Enrollment::getCourse<\/a>"],[0,1,"<a href=\"Model\/Enrollment.php.html#66\">Enrollment::setCourse<\/a>"],[0,1,"<a href=\"Model\/Enrollment.php.html#72\">Enrollment::getCertificationCode<\/a>"],[0,1,"<a href=\"Model\/Enrollment.php.html#77\">Enrollment::setCertificationCode<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#64\">Lesson::getId<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#69\">Lesson::getName<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#74\">Lesson::setName<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#80\">Lesson::getDescription<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#85\">Lesson::setDescription<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#91\">Lesson::getVideo<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#96\">Lesson::setVideo<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#102\">Lesson::getPermalink<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#107\">Lesson::setPermalink<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#113\">Lesson::getCourse<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#118\">Lesson::setCourse<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#124\">Lesson::getUserLessons<\/a>"],[0,1,"<a href=\"Model\/Lesson.php.html#129\">Lesson::setUserLessons<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#66\">Profile::getId<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#71\">Profile::getName<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#76\">Profile::setName<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#82\">Profile::getLogin<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#87\">Profile::setLogin<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#93\">Profile::getEmail<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#98\">Profile::setEmail<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#104\">Profile::getAvatar<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#109\">Profile::setAvatar<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#115\">Profile::getUser<\/a>"],[0,1,"<a href=\"Model\/Profile.php.html#120\">Profile::setUser<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#59\">Progress::getId<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#64\">Progress::getPercent<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#69\">Progress::setPercent<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#75\">Progress::getUser<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#80\">Progress::setUser<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#86\">Progress::getLesson<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#91\">Progress::setLesson<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#97\">Progress::getCreated<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#102\">Progress::setCreated<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#108\">Progress::getUpdated<\/a>"],[0,1,"<a href=\"Model\/Progress.php.html#113\">Progress::setUpdated<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#47\">Subscription::getId<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#52\">Subscription::getUser<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#57\">Subscription::setUser<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#63\">Subscription::getStatus<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#68\">Subscription::setStatus<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#74\">Subscription::getStarted<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#79\">Subscription::setStarted<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#85\">Subscription::getFinished<\/a>"],[0,1,"<a href=\"Model\/Subscription.php.html#90\">Subscription::setFinished<\/a>"],[100,1,"<a href=\"Model\/User.php.html#74\">User::__construct<\/a>"],[100,1,"<a href=\"Model\/User.php.html#85\">User::getId<\/a>"],[100,1,"<a href=\"Model\/User.php.html#90\">User::getName<\/a>"],[100,1,"<a href=\"Model\/User.php.html#95\">User::setName<\/a>"],[0,1,"<a href=\"Model\/User.php.html#101\">User::getLogin<\/a>"],[100,1,"<a href=\"Model\/User.php.html#106\">User::setLogin<\/a>"],[0,1,"<a href=\"Model\/User.php.html#112\">User::getEmail<\/a>"],[100,1,"<a href=\"Model\/User.php.html#117\">User::setEmail<\/a>"],[0,1,"<a href=\"Model\/User.php.html#123\">User::getAvatar<\/a>"],[100,1,"<a href=\"Model\/User.php.html#128\">User::setAvatar<\/a>"],[0,1,"<a href=\"Model\/User.php.html#134\">User::getSubscription<\/a>"],[0,1,"<a href=\"Model\/User.php.html#139\">User::setSubscription<\/a>"],[0,1,"<a href=\"Model\/User.php.html#145\">User::getEnrollmentCollection<\/a>"],[0,1,"<a href=\"Model\/User.php.html#150\">User::setEnrollmentCollection<\/a>"],[0,1,"<a href=\"Model\/User.php.html#156\">User::getCourseCollection<\/a>"],[0,1,"<a href=\"Model\/User.php.html#161\">User::setCouseCollection<\/a>"],[0,1,"<a href=\"Model\/User.php.html#167\">User::getLessonCollection<\/a>"],[0,1,"<a href=\"Model\/User.php.html#172\">User::setLessonCollection<\/a>"],[0,1,"<a href=\"Model\/User.php.html#178\">User::getProfileCollection<\/a>"],[0,1,"<a href=\"Model\/User.php.html#183\">User::setProfileCollection<\/a>"],[100,1,"<a href=\"Test\/TestCase.php.html#14\">TestCase::setup<\/a>"],[100,1,"<a href=\"Test\/TestCase.php.html#25\">TestCase::tearDown<\/a>"],[100,2,"<a href=\"Test\/TestCase.php.html#35\">TestCase::getEntityManager<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

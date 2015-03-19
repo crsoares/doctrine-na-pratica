@@ -2,6 +2,7 @@
 namespace DoctrineNaPratica\Model;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /** 
  * @ORM\Entity
@@ -62,17 +63,26 @@ class User
 	 */
 	private $lessonCollection;
 
+	/**
+	 * @ORM\OneToMany(targetEntity="Profile", mappedBy="user", cascade={"all"}, orphanRemoval=true, fetch="LAZY")
+	 *
+	 * @var Doctrine\Common\Collections\Collection
+	 */
+	protected $profileCollection;
+
+
 	public function __construct()
 	{
 		$this->couseCollection      = new ArrayCollection;
 		$this->lessonCollection     = new ArrayCollection;
 		$this->enrollmentCollection = new ArrayCollection;
+		$this->profileCollection	= new ArrayCollection;
 	}
 
 	/**
 	 * @return integer
 	 */
-	public function getId($id)
+	public function getId()
 	{
 		return $this->id;
 	}
@@ -162,6 +172,17 @@ class User
 	public function setLessonCollection($lessonCollection)
 	{
 		$this->lessonCollection = $lessonCollection;
+		return $this;
+	}
+
+	public function getProfileCollection()
+	{
+		return $this->profileCollection;
+	}
+
+	public function setProfileCollection($profileCollection)
+	{
+		$this->profileCollection = $profileCollection;
 		return $this;
 	}
 

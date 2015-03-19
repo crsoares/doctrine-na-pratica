@@ -2,6 +2,7 @@
 	"require": {
 		"doctrine/common": "*",
 		"doctrine/dbal": "*",
-		"doctrine/orm": "*"
+		"doctrine/orm": "*",
+		"phpunit/phpunit": "*"
 	}
 }
